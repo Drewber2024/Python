@@ -1,0 +1,75 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+print("You are stood at a fork road.  There is an old sign with two arrows pointing in the two directions of the fork. One arrow says Left, the other says Right.  Type the route you wish to take.")
+
+direction = input("What is the direction you wish to travel? ")
+
+if direction == "Left":
+  print("You made a wise choice traveller!  You now stand next to a swampy shore.  You see there is a sign next to a rickety dock that says the boat returns every hour.")
+  direction = input("Do you wait for the boat to return or do you swim across the swamp? Please enter your chosen path: Wait or Swim: ")
+  if direction == "Swim":
+    print("You get halfway across the swamp and get dragged under the water by a school of ferocious shrimp and eaten alive over several days mwa ha ha.  Game Over")
+  elif direction == "Wait":
+    print("An old boat slowly approaches the dock which is being rowed by a snaggle tooth old man.  He tells you to get in and he will have you across the swamp in no time.")
+    print("You arrive on the other side of the swamp where you find three doors.  One Red, One Yellow and One Blue.")
+    direction = input("Which colour door do you choose? Red? Yellow or Blue: ")
+
+    if direction == "Red":
+      print("You open the door and are immediatley incinerated by a backdraft of flames.  Ouch.  Game Over")
+    elif direction == "Yellow":
+      print("You have successfully found a pot of GOLD and completed the game. CONGRATULATIONS!")
+    elif direction == "Blue":
+      print("You are ravaged by some hungry gophers.  Game Over!")
+    else:
+      print("Sorry i do not understand your request.")
+  else:
+    print("Sorry i do not understand your request.")
+
+elif direction == "Right":
+  print('''                                       .-.
+                              \\\V/// (o.o)
+                              #######  |=|
+                             //6 , 6\\  Y
+                              \  =  /   |
+                             .-:---:---'B
+              (             /   `@` ,--'|
+               )  )        ( <|'   '|   |
+           ______(____      \ \__.__/   |
+          (___________)      `/<<<<<\   |
+           /         \       (>>>>>>>)  |
+          /           \      `"|"|"|"`  |
+         |             |       |_| |    |
+     ____\             /____  _(_| |_   |
+    ()____'.__     __.'____()(___|___)  |
+    jgs  .'` .'```'. `-.
+        ().'`       `'.()
+        ''')
+  print("By taking the Right path you have stumbled into a band of hungry cannibles and they want a BBQ with YOU!  Game Over!")
+else:
+  print("Sorry i do not understand your request.")
