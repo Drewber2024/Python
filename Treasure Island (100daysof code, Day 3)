@@ -1,3 +1,5 @@
+#Intro Screen
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -22,12 +24,12 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
-
+############################################################
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-#Write your code below this line 👇
+###Start of the journey###########
 print("You are stood at a fork road.  There is an old sign with two arrows pointing in the two directions of the fork. One arrow says Left, the other says Right.  Type the route you wish to take.")
-
+#Listen for input from the user and assign to the variable "direction"
 direction = input("What is the direction you wish to travel? ")
 
 if direction == "Left":
@@ -41,15 +43,15 @@ if direction == "Left":
     direction = input("Which colour door do you choose? Red? Yellow or Blue: ")
 
     if direction == "Red":
-      print("You open the door and are immediatley incinerated by a backdraft of flames.  Ouch.  Game Over")
+      print("You open the door and are immediately incinerated by a backdraft of flames.  Ouch.  Game Over")
     elif direction == "Yellow":
       print("You have successfully found a pot of GOLD and completed the game. CONGRATULATIONS!")
     elif direction == "Blue":
       print("You are ravaged by some hungry gophers.  Game Over!")
     else:
-      print("Sorry i do not understand your request.")
+      print("Sorry I do not understand your request.")
   else:
-    print("Sorry i do not understand your request.")
+    print("Sorry I do not understand your request.")
 
 elif direction == "Right":
   print('''                                       .-.
@@ -70,6 +72,6 @@ elif direction == "Right":
     jgs  .'` .'```'. `-.
         ().'`       `'.()
         ''')
-  print("By taking the Right path you have stumbled into a band of hungry cannibles and they want a BBQ with YOU!  Game Over!")
+  print("By taking the Right path you have stumbled into a band of hungry cannibals and they want a BBQ with YOU!  Game Over!")
 else:
-  print("Sorry i do not understand your request.")
+  print("Sorry I do not understand your request.")
