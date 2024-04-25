@@ -1,0 +1,13 @@
+#Random Coin Toss
+
+#Import the Python Random Module
+import random
+
+#Create a variable to hold the value of either 0 and 1
+result = random_integer = random.randint(0,1)
+
+#If the value is = 0 then display "Tails" else display "Heads"
+if result == 0:
+  print("Tails")
+else:
+  print("Heads")
